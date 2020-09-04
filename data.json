@@ -1,12 +1,22 @@
 {
   "instructors": [
     {
+      "id": 1,
       "avatar_url": "http://google.com",
       "name": "Victor Martins Soares",
-      "birth": "1996-12-16",
+      "birth": 850694400000,
       "gender": "M",
       "services": "crossfit, musculacao",
-      "created_at": 1599257470815
+      "created_at": 1599259581004
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://google.com",
+      "name": "lobo",
+      "birth": 852076800000,
+      "gender": "M",
+      "services": "crossfit, musculacao",
+      "created_at": 1599259616209
     }
   ]
 }
