@@ -1,1 +1,12 @@
-{"avatar_url":"http://google.com","name":"Victor Martins Soares","birth":"1111-11-11","gender":"M","services":"crossfit, musculacao"}
+{
+  "instructors": [
+    {
+      "avatar_url": "http://google.com",
+      "name": "Victor Martins Soares",
+      "birth": "1996-12-16",
+      "gender": "M",
+      "services": "crossfit, musculacao",
+      "created_at": 1599257470815
+    }
+  ]
+}
