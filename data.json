@@ -17,6 +17,15 @@
       "gender": "M",
       "services": "crossfit, musculacao",
       "created_at": 1599259616209
+    },
+    {
+      "id": 3,
+      "avatar_url": "http://google.com",
+      "name": "Jessica",
+      "birth": 946771200000,
+      "gender": "F",
+      "services": "crossfit, musculacao, zumba",
+      "created_at": 1599592785194
     }
   ]
 }
