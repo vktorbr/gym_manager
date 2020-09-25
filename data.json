@@ -1,4 +1,28 @@
 {
+  "members": [
+    {
+      "id": 1,
+      "avatar_url": "https://instagram.frec10-1.fna.fbcdn.net/v/t51.2885-15/fr/e15/s1080x1080/117185313_1623582674459366_34515889634492621_n.jpg?_nc_ht=instagram.frec10-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=9IP3fxc11swAX8fP4yn&oh=3808b42427e266541a3897851575ef00&oe=5F94FB98",
+      "name": "Vktor",
+      "email": "vms5@cin.ufpe.br",
+      "birth": 820540800000,
+      "gender": "M",
+      "blood": "O0",
+      "weight": "96",
+      "height": "180"
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://instagram.fpnz1-1.fna.fbcdn.net/v/t51.2885-15/e35/118591897_122761879275174_2976411296599110681_n.jpg?_nc_ht=instagram.fpnz1-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=Q9h92XjdCMEAX-K6EmV&_nc_tp=18&oh=8ce510c2a2870401b6fa4f365574e9d7&oe=5F955E81",
+      "name": "Ronaldinho",
+      "email": "ronaldinho@gmail.com",
+      "birth": 786240000000,
+      "gender": "M",
+      "blood": "A1",
+      "weight": "94",
+      "height": "174"
+    }
+  ],
   "instructors": [
     {
       "id": 2,
