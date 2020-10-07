@@ -8,7 +8,10 @@ module.exports = {
         })
     },
     create(req, res){
-        return res.render('members/create');
+        Member.instructorsSelectOptions(function(option){
+            return res.render('members/create', {instructorOption: option});
+        })
+    
     },
     post(req, res){
         const keys = Object.keys(req.body);
@@ -37,9 +40,9 @@ module.exports = {
             if(!member) return res.send('Member not found!');
             member.birth = date(member.birth).iso;
            
-
-            return res.render('members/edit', {member});
-
+            Member.instructorsSelectOptions(function(option){
+                return res.render('members/edit', {instructorOption: option, member});
+            })
         })
     },
     put(req, res){
