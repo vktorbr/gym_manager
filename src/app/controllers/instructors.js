@@ -3,16 +3,34 @@ const { age, date } = require('../../lib/utils');
 
 module.exports = {
     index(req, res){
-        const { filter } = req.query;
-        if(filter){
-            Instructor.findBy(filter, function(instructors){
-                return res.render('instructors/index', {instructors, filter});
-            })
-        }else{
-            Instructor.all(function(instructors){
-                return res.render('instructors/index', {instructors});
-            })
+        let { filter, page, limit } = req.query;
+        
+        page = page || 1;
+        limit = limit || 2;
+        let offset = limit * (page - 1);
+        
+        const params = {
+            filter,
+            page,
+            limit,
+            offset,
+            callback(instructors){
+                let totalAux = 0;
+                if(instructors[0]){
+                    totalAux = instructors[0].total;
+                }else{
+                    totalAux = 1;
+                }
+                const pagination = {
+                    
+                    total: Math.ceil(totalAux / limit),
+                    page
+                }
+                return res.render('instructors/index', {instructors, pagination, filter});
+            }
         }
+
+        Instructor.paginate(params);
     },
     create(req, res){
         return res.render('instructors/create');
