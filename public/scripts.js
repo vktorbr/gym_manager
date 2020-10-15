@@ -49,9 +49,9 @@ function createPagination(pagination){
             elements += `<span>${page}</span>`;
         }else{
             if(filter){
-                elements += `<a href="?pages${page}&filter=${filter}">${page}</a>`;
+                elements += `<a href="?page=${page}&filter=${filter}">${page}</a>`;
             }else{
-                elements += `<a href="?pages${page}">${page}</a>`;
+                elements += `<a href="?page=${page}">${page}</a>`;
             }
         }
     }

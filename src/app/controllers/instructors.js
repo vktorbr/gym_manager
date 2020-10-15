@@ -22,7 +22,6 @@ module.exports = {
                     totalAux = 1;
                 }
                 const pagination = {
-                    
                     total: Math.ceil(totalAux / limit),
                     page
                 }
